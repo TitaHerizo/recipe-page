@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit";
+}
+body .container {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+}
+body .container .illustration img {
+  width: 100%;
+}
+body .container .description {
+  padding: 0 2rem;
+}
+body .container .description .header h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Young Serif", serif;
+}
+body .container .description .timer {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+body .container .description .timer h3 {
+  color: hsl(332, 51%, 32%);
+  margin: 0.5rem;
+}
+body .container .description .listing {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+body .container .description .listing h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+}
+body .container .description .listing li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+body .container .description .listing .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 2rem;
+  border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+}
+body .container .description .listing .row .values {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+body .container .description .listing .row:nth-last-child(1) {
+  border: none;
+}
+body .container .description .listing:nth-last-child(1) {
+  border: none;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 426px) {
+  body .container {
+    width: 45%;
+    padding: 1.3em;
+    margin: 100px auto;
+    border-radius: 1rem;
+  }
+  body .container .illustration img {
+    border-radius: 0.7rem;
+  }
+  body .container .description {
+    padding: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+$youngSerif: 'Young Serif', serif;
+$outfit: 'Outfit';
+
+$Eggshell: hsl(30, 54%, 90%);
+$White: hsl(0, 0%, 100%);
+
+$Dark_Raspberry: hsl(332, 51%, 32%);
+$RoseWhite: hsl(330, 100%, 98%);
+
+$Nutmeg: hsl(14, 45%, 36%);
+$WengeBrown: hsl(30, 10%, 34%);
+
+$LightGrey: hsl(30, 18%, 87%);
+
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: $Eggshell;
+    font-family: $outfit;
+
+    .container{
+        width: 100%;
+        background-color: $White;
+
+        margin-bottom: 2rem;
+
+        .illustration{
+            img{
+                width: 100%;
+            }
+        }
+
+        .description{
+            padding: 0 2rem;
+
+            .header {
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    font-family: $youngSerif;
+                }
+            }
+
+            .timer{
+                background-color: $RoseWhite;
+                padding: 1rem;
+                border-radius: 0.5rem;
+
+                h3{
+                    color: $Dark_Raspberry;
+                    margin: 0.5rem;
+                }
+            }
+
+            .listing{
+                border-bottom: 1px solid $LightGrey;
+
+                h2{
+                    color: $Nutmeg;
+                    font-family: $youngSerif;
+                }
+
+                li::marker{
+                    color:$Nutmeg;
+                    font-weight: bold;
+                }
+
+                .row{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    padding: 1rem 2rem;
+
+                    border-bottom: 0.1rem solid $LightGrey;
+
+                    .values{
+                        color: $Nutmeg;
+                        font-weight: bold;
+                    }
+
+                    &:nth-last-child(1){
+                    border: none;
+                    }
+                }
+
+            &:nth-last-child(1){
+                border: none;
+                }
+            }
+        }
+    }
+
+    .attribution{
+        font-size: 11px;
+        text-align: center; 
+        padding-bottom: 15px;
+        a {
+            color: hsl(228, 45%, 44%); 
+        }
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+li {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width:426px){
+    body{
+        .container{
+            width: 45%;
+
+            padding: 1.3em;
+            margin: 100px auto;
+            border-radius: 1rem;
+
+            .illustration{
+                img{
+                    border-radius: 0.7rem;
+                }
+            }
+            .description{
+                padding: 0;
+            }
+        }
+    }
+}
